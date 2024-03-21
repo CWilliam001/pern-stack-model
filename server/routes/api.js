@@ -27,7 +27,7 @@ router.post('/get-count', async (req, res) => {
         const number = parseInt(count)
 
         let result;
-        if (number % 2 === 0) {
+        if ((number - 1) % 2 === 0) {
             result = "even";
         }  else {
             result = "odd";
