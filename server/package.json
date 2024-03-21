@@ -1,0 +1,30 @@
+{
+  "name": "pern-stack-model",
+  "version": "1.0.0",
+  "description": "This is PERN stack application for you to test running application from local to kubernetes",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"nodemon index\" \"cd ../client && npm run dev\"",
+    "dev": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "express-fileupload": "^1.5.0",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.0",
+    "path": "^0.12.7",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
